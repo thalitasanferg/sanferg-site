@@ -6,16 +6,18 @@
 }
 
 body {
-    font-family: 'montserrat';
+    font-family: 'Montserrat', sans-serif;
     background-color: #111;
     color: #eee;
     line-height: 1.6;
+    padding: 10px;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
     position: absolute;
     top: 20px;
     width: 100%;
@@ -43,6 +45,7 @@ nav a:hover {
     text-align: center;
     flex-direction: column;
     color: #d4af37;
+    padding: 0 20px;
 }
 
 .logo {
@@ -66,7 +69,7 @@ nav a:hover {
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 30px;
-    font-weight: montserrat;
+    font-weight: bold;
     transition: background 0.3s;
 }
 
@@ -95,4 +98,37 @@ footer {
     padding: 20px;
     margin-top: 60px;
     color: #888;
+}
+
+/* ---------------------
+   Responsivo para telas menores
+---------------------- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        top: 10px;
+        gap: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .container {
+        margin: 30px 10px;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
 }
