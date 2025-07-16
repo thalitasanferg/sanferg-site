@@ -138,6 +138,25 @@ footer {
         width: 80px;
     }
 
+
+/* Imagens da página de produtos */
+.produto-imagens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.produto-imagens img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+}
+
+
     nav a {
         font-size: 0.9rem;
     }
