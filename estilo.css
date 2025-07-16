@@ -1,6 +1,3 @@
-/* Importa a fonte Montserrat do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
 /* Reset */
 * {
     margin: 0;
@@ -9,8 +6,7 @@
 }
 
 body {
-    /* Agora a fonte Montserrat será aplicada corretamente */
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'montserrat';
     background-color: #111;
     color: #eee;
     line-height: 1.6;
@@ -70,8 +66,7 @@ nav a:hover {
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 30px;
-    /* CORRIGIDO: Usando 'bold' ao invés do nome da fonte */
-    font-weight: bold; 
+    font-weight: montserrat;
     transition: background 0.3s;
 }
 
@@ -101,5 +96,3 @@ footer {
     margin-top: 60px;
     color: #888;
 }
-
-/* A chave '}' extra no final foi REMOVIDA */
