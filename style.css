@@ -155,3 +155,10 @@ footer {
         top: 10px;
     }
 }
+
+/* Correção da página Produtos com menu fixo */
+.pagina-produtos {
+    margin-top: 120px;
+}
+
+
