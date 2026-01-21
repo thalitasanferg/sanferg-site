@@ -1,214 +1,101 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanferg - Contato</title>
 
-/* BASE */
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #111;
-    color: #eee;
-    line-height: 1.6;
-}
+    <!-- Fonte Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
-/* NAVEGAÇÃO */
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    position: fixed;
-    top: 20px;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
+    <!-- Estilo -->
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
 
-nav a {
-    color: #eee;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
+<header class="hero">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+    </nav>
 
-nav a:hover {
-    color: #d4af37;
-}
+    <div class="hero-content">
+        <img src="logo.png" alt="Logo Sanferg" class="logo">
+        <h1>Contato</h1>
+        <p>Fale conosco e solicite seu orçamento</p>
+    </div>
+</header>
 
-/* HERO */
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #222, #000);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    color: #d4af37;
-    padding: 0 20px;
-}
+<main>
+    <section class="container">
+        <h2>Atendimento Comercial</h2>
 
-.logo {
-    width: 120px;
-    margin-bottom: 20px;
-}
+        <div class="contato-vendas">
 
-.hero-content h1 {
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+            <!-- Vendedora Thalita -->
+            <div class="vendedora">
+                <h3>Thalita</h3>
+                <p>Vendedora Comercial</p>
+                <a 
+                    href="https://api.whatsapp.com/send?phone=5511968742480&text=Ol%C3%A1,%20vim%20pelo%20site%20da%20Sanferg%20e%20gostaria%20de%20um%20or%C3%A7amento"
+                    target="_blank"
+                    class="btn">
+                    Falar no WhatsApp
+                </a>
+            </div>
 
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 25px;
-    color: #eee;
-}
+            <!-- Vendedora Laine -->
+            <div class="vendedora">
+                <h3>Laine</h3>
+                <p>Vendedora Comercial</p>
+                <a 
+                    href="https://api.whatsapp.com/send?phone=5511975224059&text=Ol%C3%A1,%20vim%20pelo%20site%20da%20Sanferg%20e%20gostaria%20de%20um%20or%C3%A7amento"
+                    target="_blank"
+                    class="btn">
+                    Falar no WhatsApp
+                </a>
+            </div>
 
-/* BOTÃO PADRÃO */
-.btn {
-    background-color: #d4af37;
-    color: #111;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    transition: background 0.3s, transform 0.2s;
-}
+        </div>
 
-.btn:hover {
-    background-color: #fff;
-    transform: translateY(-2px);
-}
+        <div class="divisor"></div>
 
-/* CONTAINER */
-.container {
-    max-width: 1000px;
-    margin: 120px auto 60px;
-    padding: 40px;
-    background: #1a1a1a;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.2);
-}
+        <h2>Outros Canais</h2>
 
-.container h2 {
-    color: #d4af37;
-    text-align: center;
-    margin-bottom: 40px;
-}
+        <p>
+            📧 Email:
+            <a href="mailto:sanferg.comercial@gmail.com">
+                sanferg.comercial@gmail.com
+            </a>
+        </p>
 
-/* PRODUTOS */
-.produto {
-    text-align: center;
-    margin-bottom: 60px;
-}
+        <p>
+            📸 Instagram:
+            <a href="https://www.instagram.com/sanferg.formas/" target="_blank">
+                @sanferg.formas
+            </a>
+        </p>
 
-.produto img {
-    width: 320px;
-    max-width: 100%;
-    border-radius: 12px;
-    border: 2px solid #d4af37;
-    padding: 10px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
-}
+        <h3>Link para vendas</h3>
+        <ul>
+            <li>
+                <a href="https://encurtador.com.br/MZj3r" target="_blank">
+                    Mercado Livre
+                </a>
+            </li>
+        </ul>
 
-.produto h3 {
-    color: #d4af37;
-    margin-bottom: 15px;
-}
+        <div class="contato-imagem">
+            <img src="contato.png" alt="Contato Sanferg">
+        </div>
 
-.produto p {
-    margin-bottom: 12px;
-    color: #ddd;
-}
+    </section>
+</main>
 
-/* DIVISOR */
-.divisor {
-    width: 100%;
-    height: 1px;
-    margin: 80px 0;
-    background: linear-gradient(to right, transparent, #d4af37, transparent);
-}
+<footer>
+    &copy; 2025 Sanferg. Todos os direitos reservados.
+</footer>
 
-/* CONTATO */
-.contato-vendas {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-
-.vendedora {
-    background: #111;
-    border: 1px solid #d4af37;
-    border-radius: 12px;
-    padding: 25px;
-    width: 260px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
-}
-
-.vendedora h3 {
-    color: #d4af37;
-    margin-bottom: 5px;
-}
-
-.vendedora p {
-    margin-bottom: 15px;
-    color: #ccc;
-}
-
-.contato-imagem {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.contato-imagem img {
-    width: 120px;
-    opacity: 0.9;
-}
-
-/* FOOTER */
-footer {
-    background: #1a1a1a;
-    text-align: center;
-    padding: 20px;
-    margin-top: 60px;
-    color: #888;
-}
-
-/* RESPONSIVO */
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 15px;
-        top: 10px;
-    }
-
-    .hero-content h1 {
-        font-size: 2em;
-    }
-
-    .hero-content p {
-        font-size: 1em;
-    }
-
-    .container {
-        margin: 80px 15px 40px;
-        padding: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    .logo {
-        width: 80px;
-    }
-
-    nav a {
-        font-size: 0.9rem;
-    }
-}
+</body>
+</html>
