@@ -1,10 +1,11 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BASE */
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #111;
@@ -12,7 +13,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navegação */
+/* NAV */
 nav {
     display: flex;
     justify-content: center;
@@ -28,16 +29,15 @@ nav a {
     color: #eee;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 nav a:hover {
     color: #d4af37;
 }
 
-/* Hero */
+/* HERO */
 .hero {
-    height: 60vh;
+    height: 100vh;
     background: linear-gradient(135deg, #222, #000);
     display: flex;
     align-items: center;
@@ -54,15 +54,16 @@ nav a:hover {
 }
 
 .hero-content h1 {
-    font-size: 2.8em;
+    font-size: 3em;
 }
 
 .hero-content p {
+    font-size: 1.2em;
     color: #eee;
     margin: 15px 0 25px;
 }
 
-/* Botão padrão */
+/* BOTÃO PADRÃO */
 .btn {
     background-color: #d4af37;
     color: #111;
@@ -71,18 +72,17 @@ nav a:hover {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s;
 }
 
 .btn:hover {
     background: #fff;
-    color: #111;
 }
 
-/* Container */
+/* CONTAINER */
 .container {
     max-width: 1000px;
-    margin: 60px auto;
+    margin: 120px auto 60px;
     padding: 40px;
     background: #1a1a1a;
     border-radius: 10px;
@@ -91,19 +91,14 @@ nav a:hover {
 
 h2 {
     color: #d4af37;
-    margin-bottom: 60px;
     text-align: center;
+    margin-bottom: 60px;
 }
 
-/* Produtos */
-.produtos-lista {
-    display: flex;
-    flex-direction: column;
-}
-
+/* PRODUTOS */
 .produto {
     text-align: center;
-    padding: 40px 0;
+    margin-bottom: 60px;
 }
 
 .produto img {
@@ -113,52 +108,47 @@ h2 {
     border: 2px solid #d4af37;
     padding: 10px;
     margin-bottom: 25px;
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.25);
 }
 
-.produto-texto h3 {
+.produto h3 {
     color: #d4af37;
     margin-bottom: 15px;
 }
 
-.produto-texto p {
+.produto p {
     margin-bottom: 12px;
-    color: #eee;
 }
 
-/* Divisor entre produtos */
+/* DIVISOR */
 .divisor {
     width: 100%;
     height: 1px;
-    margin: 60px 0;
-    background: linear-gradient(
-        to right,
-        transparent,
-        #d4af37,
-        transparent
-    );
+    margin: 80px 0;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
 }
 
-/* Rodapé */
+/* FOOTER */
 footer {
     background: #1a1a1a;
     text-align: center;
     padding: 20px;
-    margin-top: 60px;
     color: #888;
 }
 
-/* Responsivo */
+/* RESPONSIVO */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
         top: 10px;
     }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
 }
 
-/* Correção da página Produtos com menu fixo */
-.pagina-produtos {
-    margin-top: 120px;
+@media (max-width: 480px) {
+    .logo {
+        width: 80px;
+    }
 }
-
-
